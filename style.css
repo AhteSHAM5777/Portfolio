@@ -37,13 +37,13 @@ section {
 }
 
 .header {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
-    display: flex;
+    background: var(--second-bg-color);
+    display:flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -461,15 +461,7 @@ span {
     background-color: var(--bg-color);
 }
 
-@media screen and (max-width:768px) {
-    .slide p {
-        padding: 0 20px;
-    }
 
-    .nav-btn {
-        display: active;
-    }
-}
 
 .contact {
     background: var(--second-bg-color);
@@ -555,6 +547,15 @@ span {
 }
 
 /* BREAKPOINT */
+@media screen and (max-width:768px) {
+    .slide p {
+        padding: 0 20px;
+    }
+
+    .nav-btn {
+        display: active;
+    }
+}  
 
 @media (max-width:1200px) {
     html {
@@ -564,11 +565,12 @@ span {
 
 @media (max-width:991px) {
     .header {
+        position: fixed;
         padding: 2rem 3%;
     }
 
     section {
-        padding: 10rem 3% 2rem;
+        padding: 10rem 15% 2rem;
     }
 
     .portfolio {
